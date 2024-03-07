@@ -11,29 +11,30 @@ tags: [blog, jekyll,Chirpy]
 由于我们的博客更新以及主页的初始化都需要在本地进行，因此我们必须先配备好该模板所需的环境: [ruby](https://link.zhihu.com/?target=https%3A//rubyinstaller.org/downloads/)，[git](https://git-scm.com/downloads) 以及[nodejs](https://nodejs.cn/download/)。其中，Git将用于模板的调用与上传，而由于Chirpy模板由Ruby编写，所以初始化的时候会用到Ruby命令行，nodejs在模板初始化时会用到！
 #### 安装Git
 直接下载64位版本，然后全部默认安装。安装成功后，可以打开`Git CMD`并运行下面命令查看版本，以验证是否安装成功:
-```cmd
+```console
 git --version
 ```
 #### 安装Ruby
+
 运行ruby的安装包（选择Ruby+Devkit），按照指引完成安装（全部设置都选默认的就行）。
 >  Ruby下载完成以后直接双击安装，除了安装路径，其他一路默认选项就行。安装路径最好不要包含空格。Ruby安装完成以后会弹出一个窗口让你选择3个选项之一来安装，一般直接选3就是，安装过程需要一定的时间。
 {: .prompt-tip }
 
-然后，我们运行`Start Command Prompt with Ruby`（在开始菜单栏的ruby文件夹下可以看到），然后运行检查版本命令来查看是否运行成功：
+然后，我们运行 `Start Command Prompt with Ruby` （在开始菜单栏的ruby文件夹下可以看到），然后运行检查版本命令来查看是否运行成功：
 
-```cmd
+```Console
 ruby -v
 ```
 
 然后，输入以下命令进行安装模板所需的库组件：
 
-```cmd
+```Console
 gem install jekyll bundler
 ```
 
 同理，安装完成后输入查看版本命令：
 
-```cmd
+```Console
 jekyII -v  
 bundler -v
 ```
@@ -48,7 +49,7 @@ bundler -v
 
 #### 克隆到本地
 
-首先，我们先进入[官方的模板网址](https://github.com/cotes2020/jekyll-theme-chirpy)，然后点击右上角的fork选项。之后我们就会进入到fork构建仓库的页面，此时我们需要把仓库名`Repository name`改成`GitHub用户名.github.io`，记住一定要改成这样子！！！ 这是官方规定的。之后，我们访问的网址就会是这个域名了，然后确定fork。之后，我们运行`Git CMD`，然后输入以下命令进行克隆：
+首先，我们先进入[官方的模板网址](https://github.com/cotes2020/jekyll-theme-chirpy)，然后点击右上角的fork选项。之后我们就会进入到fork构建仓库的页面，此时我们需要把仓库名 `Repository name` 改成 `GitHub用户名.github.io` ，记住一定要改成这样子！！！ 这是官方规定的。之后，我们访问的网址就会是这个域名了，然后确定fork。之后，我们运行 `Git CMD` ，然后输入以下命令进行克隆：
 
 ```bash
 git clone git@github.com:[用户名]/[用户名].github.io.git
@@ -57,11 +58,11 @@ git clone git@github.com:[用户名]/[用户名].github.io.git
 >这里我用的是ssh进行连接与克隆。想要像我一样用ssh进行克隆和后面的登陆的，可以参考附录的ssh建立连接部分。当然，不用ssh的可以直接用http方式！
 {: .prompt-warning }
 
-默认是在当前文件路径下自动创建名字位`[用户名].github.io`{: .filepath}的文件
+默认是在当前文件路径下自动创建名字位 `[用户名].github.io`{: .filepath}的文件
 
 #### 初始化到本地
 
-运行`Start Command Prompt with Ruby`，然后切换目录到你克隆的文件夹：
+运行 `Start Command Prompt with Ruby` ，然后切换目录到你克隆的文件夹：
 
 ```bash
 cd xxxx # xxx为你模板的地址
@@ -80,24 +81,24 @@ bash tools/init
 ```
 
 >这是比较重要的一步，根据官方的说法，这个初始化主要是删除了一些文件，如果不执行这一步，发布网页的时候网页会显示异常。
->{: .prompt-tip }
+{: .prompt-tip }
 
->这里初始化时候，可能因为Windows的问题会出现`node_env不是系统命令`这个报错。这里，虽然不影响本地运行但是会导致我们在GitHub上部署时报错！ 大家可以先看看会不会报错，如果有报错，可以参考`bug记录中的dist文件夹缺失部分`。
->{: .prompt-danger }
+>这里初始化时候，可能因为Windows的问题会出现 `node_env不是系统命令` 这个报错。这里，虽然不影响本地运行但是会导致我们在GitHub上部署时报错！ 大家可以先看看会不会报错，如果有报错，可以参考 `bug记录中的dist文件夹缺失部分` 。
+{: .prompt-danger }
 
 ## 0x02 更新配置并发布主页
 
-在我们正式上传之前，首先需要配置本地模板根目录下的`config.yml`，并补全其中的url部分：
+在我们正式上传之前，首先需要配置本地模板根目录下的 `config.yml` ，并补全其中的url部分：
 
 ```sass
 url: "https://[GitHub用户名].github.io"
 ```
 {: file='_config.yml'}
 
-这里，其实已经可以上传了！！但是我先提前介绍以下`config.yml`的其他配置，大家也可以先配置后再上传，当然也可以直接上传先看看，然后后续自己再更新也可以。
+这里，其实已经可以上传了！！但是我先提前介绍以下 `config.yml` 的其他配置，大家也可以先配置后再上传，当然也可以直接上传先看看，然后后续自己再更新也可以。
 
 ```sass
-系统语言，格式对应根目录下的`_data/locales`。  
+系统语言，格式对应根目录下的_data/locales。  
 lang: zh-CN
   
 title: Yuan's Website  #主标题  
