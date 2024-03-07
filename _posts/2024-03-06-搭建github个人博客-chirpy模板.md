@@ -22,19 +22,19 @@ git --version
 
 然后，我们运行 `Start Command Prompt with Ruby` （在开始菜单栏的ruby文件夹下可以看到），然后运行检查版本命令来查看是否运行成功：
 
-```Console
+```console
 ruby -v
 ```
 
 然后，输入以下命令进行安装模板所需的库组件：
 
-```Console
+```console
 gem install jekyll bundler
 ```
 
 同理，安装完成后输入查看版本命令：
 
-```Console
+```console
 jekyII -v  
 bundler -v
 ```
@@ -123,7 +123,6 @@ theme_mode:  #色调模式，有黑和白两种，若不填写左下角会有切
   
 avatar: '/img/wtw.png'  #左上角头像  
 ```
-
 {: file='_config.yml'}
 
 接下来，我们正式开始把初始化的模板传至你的GitHub仓库之中并覆盖掉原来的模板。启动`Git CMD`，输入以下命令将路径转至模板下：
