@@ -84,12 +84,12 @@ social_preview_image: # string, local or CORS resources
 
 # boolean type, the global switch for TOC in posts.
 toc: true
-  valine:
-    comments: true           
-    leancloud_appid: 2j4PCneuiuirFCfoeJcmNQ44-MdYXbMMI         # 填入你的APP ID 
-    leancloud_appkey: v4TJceWDxk4DFAHx1OCd5jFS         # 填入你的APP Key 
-    placeholder: Go go go!     # 空白评论栏的占位符
-    avatar: /img/wtw.png 
+valine:
+  comments: true           
+  leancloud_appid: 2j4PCneuiuirFCfoeJcmNQ44-MdYXbMMI         # 填入你的APP ID 
+  leancloud_appkey: v4TJceWDxk4DFAHx1OCd5jFS         # 填入你的APP Key 
+  placeholder: Go go go!     # 空白评论栏的占位符
+  avatar: /img/wtw.png 
 
 comments:
   active: 'valine' # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
