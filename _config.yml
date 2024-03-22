@@ -95,6 +95,7 @@ comments:
     leancloud_appkey: v4TJceWDxk4DFAHx1OCd5jFS         # 填入你的APP Key 
     placeholder: "点击发表一条评论："      # 空白评论栏的占位符
     avatar: mp # 默认头像，参考 https://valine.js.org/avatar.html 
+    serverURLs: https://2j4pcneu.api.lncldglobal.com
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
