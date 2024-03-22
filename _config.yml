@@ -95,13 +95,13 @@ comments:
   active: 'valine' # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
  # The active options are as follows:
-  valine:
-    comments: true           
-    leancloud_appid: 2j4PCneuiuirFCfoeJcmNQ44-MdYXbMMI         # 填入你的APP ID 
-    leancloud_appkey: v4TJceWDxk4DFAHx1OCd5jFS         # 填入你的APP Key 
-    placeholder: Go go go!     # 空白评论栏的占位符
-    avatar: /img/wtw.png 
-         # 默认头像，参考 https://valine.js.org/avatar.html 
+ valine:
+  enable: true  #是否启用valine         
+  leancloud_appid: 2j4PCneuiuirFCfoeJcmNQ44-MdYXbMMI         # 填入你的APP ID 
+  leancloud_appkey: v4TJceWDxk4DFAHx1OCd5jFS         # 填入你的APP Key 
+  placeholder: Go go go!     # 空白评论栏的占位符
+  avatar: mp # 默认头像，参考 https://valine.js.org/avatar.html 
+  serverURLs: 'https://2j4pcneu.api.lncldglobal.com'  #LeanCloud应用的REST API 服务器地址
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
