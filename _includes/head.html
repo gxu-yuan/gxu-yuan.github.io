@@ -11,7 +11,10 @@
 
 {% if page.layout == 'post' %}
   {% if site.comments.active and page.comments %}
-    <script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+      <link
+    rel="stylesheet"
+    href="https://unpkg.com/@waline/client@v3/dist/waline.css"
+  />
   {% endif %}
 {% endif %}
 
