@@ -10,8 +10,8 @@
   >
 
 {% if page.layout == 'post' %}
-  {% if site.valine.comments and page.comments %}
-    <script src="https://unpkg.com/valine/dist/Valine.min.js"></script>
+  {% if site.comments.active and page.comments %}
+    <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
   {% endif %}
 {% endif %}
 

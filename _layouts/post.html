@@ -85,7 +85,6 @@ tail_includes:
   <div class="content">
     {{ content }}
   </div>
-  
   <div class="row">
   <div class="col-12 col-lg-11 col-xl-8">
     <div id="post-extend-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
@@ -94,7 +93,7 @@ tail_includes:
 
     {% include post-nav.html %}
 
-    {% if site.valine.comments and page.comments %}
+    {% if site.comments.active and page.comments %}
       {% include valine.html %}
     {% endif %}
 
