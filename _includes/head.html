@@ -9,6 +9,12 @@
     content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
   >
 
+{% if page.layout == 'post' %}
+  {% if site.valine.comments and page.comments %}
+    <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  {% endif %}
+{% endif %}
+
   {%- capture seo_tags -%}
     {% seo title=false %}
   {%- endcapture -%}
