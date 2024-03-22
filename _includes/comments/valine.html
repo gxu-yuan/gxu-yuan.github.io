@@ -1,11 +1,18 @@
-<div id="vcomments"></div>
+{% if site.valine.enable %}
+<div id="comments"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 <script>
-    new Valine({
-        el: '#vcomments',
-        appId: '2j4PCneuiuirFCfoeJcmNQ44-MdYXbMMI',
-        appKey: 'v4TJceWDxk4DFAHx1OCd5jFS',
-        placeholder:'一起交流交流呀！！！',
-        avatar: '/img/wtw.png ',
-        enableQQ: true    // 当在昵称栏填入QQ号时自动获取QQ昵称和QQ头像，不需要该功能请删除。
-    });
+  new Valine({
+    el: '#comments',
+    app_id: '2j4PCneuiuirFCfoeJcmNQ44-MdYXbMMI',
+    app_key: 'v4TJceWDxk4DFAHx1OCd5jFS',
+    placeholder: "点击发表一条评论：" ,
+    avatar: mp,
+    serverURLs: 'https://2j4pcneu.api.lncldglobal.com',
+    visitor: true,
+	enableQQ: true
+  });
 </script>
+{% endif %}
+
