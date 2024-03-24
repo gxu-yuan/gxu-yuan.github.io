@@ -1,10 +1,18 @@
- <div id="waline">
-     <script type="module">
-         import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
 
-         init({
-             el: '#waline',
-             serverURL: 'https://yuan-blog-rjs9xukqm-gxu-yuans-projects.vercel.app/',  /* enter your server url */
-         });
-     </script>
- </div>
+<div id="waline">
+    <script type="module">
+        import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs'
+        init({
+            el: '#waline',
+            serverURL: 'https://www.yuan-blog.club',  /* enter your server url */
+            comment: true,
+			dark: "html[data-mode='dark']",
+            texRenderer: (blockMode, tex) =>
+            window.MathJax.startup.adaptor.outerHTML(
+                window.MathJax.tex2svg(tex, {
+                    display: blockMode,
+                }),
+            ),
+        });
+    </script>
+</div>

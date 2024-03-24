@@ -90,8 +90,9 @@ comments:
   # The active options are as follows:
  # The active options are as follows:
   waline:
-    enable: true  #是否启用valine         
-    serverURLs: 'https://yuan-blog-rjs9xukqm-gxu-yuans-projects.vercel.app/'
+    enable: true  #是否启用valine     
+    serverURL: 'https://www.yuan-blog.club'
+    placeholder: “一起交流呀！！！"
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
