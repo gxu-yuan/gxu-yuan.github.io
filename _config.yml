@@ -92,7 +92,6 @@ comments:
   waline:
     enable: true  #是否启用valine     
     serverURL: 'https://www.yuan-blog.club'
-    placeholder: “一起交流呀！！！"
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
