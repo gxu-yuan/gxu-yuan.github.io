@@ -454,4 +454,3 @@ If this blog help you reduce time to develop, you can give me a cup of coffee :)
     <img src="1.jpg" width="300" alt="yuan"/>
     <img src="2.jpg" width="300" alt="yuan"/>
 </center>
-
