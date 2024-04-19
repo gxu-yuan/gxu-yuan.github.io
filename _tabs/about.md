@@ -16,8 +16,8 @@ If my blog help you reduce time to develop, you can give me a cup of coffee :)
 如果觉得我的博客对你有帮助的话，可以小小的赞助我一杯咖啡~🙌
 
 <center class="half">
-    <img src="/img/1.jpg" width="300"/>
-    <img src="/img/2.jpg" width="300"/>
+    <img src="/img/1.jpg" width="300" alt="yuan"/>
+    <img src="/img/2.jpg" width="300" alt="yuan"/>
 </center>
 
 日期：2024.03.06 
